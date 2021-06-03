@@ -224,7 +224,7 @@ source "vsphere-iso" "win2019stdcore" {
     insecure_connection         = true
     datacenter                  = var.vcenter_datacenter
     cluster                     = var.vcenter_cluster
-    folder                      = "Templates/${ var.os_family }/${ var.os_version }"
+    folder                      = "AMI/Packer/Templates/${ var.os_family }/${ var.os_version }"
     datastore                   = var.vcenter_datastore
     remove_cdrom                = false
     convert_to_template         = true
